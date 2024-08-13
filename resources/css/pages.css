@@ -26,12 +26,13 @@ body {
 }
 
 main {
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin: 40px 0px 40px 0px;
 }
+
 
 .main {
     max-width: 1000px;
@@ -43,49 +44,60 @@ main {
     border: 2px solid var(--purple);
 }
 
-.title {
+.main h1 {
     margin-top: 40px;
 }
 
-.underline {
+.main p {
+    margin: 40px 20px 0px 20px;
+    text-align: left;
+}
+
+.main footer {
+    margin: 40px 0px;
+    text-align: center;
+}
+
+.main footer a {
+    text-decoration: none;
+    color: var(--purple2);
+}
+
+.main footer a:hover {
     text-decoration: underline;
 }
 
-.underline:hover {
-    text-shadow: 5px 5px 3px var(--purple);
-    cursor: wait;
-}
-
+/* Socials page */
 .links {
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .links a {
-    text-decoration: none;
-    padding: 0px 30px;
     color: var(--purple);
-    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid var(--purple);
+    margin: 0px 20px;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .links a:hover {
+    background-color: var(--purple);
+    color: var(--background-color);   
+    transition: 0.3s;
+}
+
+.links a span {
+    width: 50%;
+}
+
+.links a span:hover {
     text-decoration: underline;
-}
-
-.links a:hover::after {
-    content: '.html';
-}
-
-.author {
-    margin-top: 40px;
-}
-
-.author a {
-    text-decoration: none;
-    color: var(--purple2);
-}
-
-.author a:hover {
-    text-decoration: underline;
-    color: var(--purple2);
-    cursor: crosshair;
 }
