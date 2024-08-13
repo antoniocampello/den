@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+:root {
+    --background-color: #010016;
+    --text-color: #969696;
+    --purple: #7c3a7c;
+    --purple2: #442784;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+    font-style: normal;
+}
+
+
+body,html {
+    height: 100%;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.intro {
+    max-width: 1000px;
+}
+
+.intro img {
+    max-width: 90%;
+    border: 2px solid var(--purple);
+}
+
+.title {
+    margin-top: 40px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.underline:hover {
+    text-shadow: 5px 5px 3px var(--purple);
+    cursor: wait;
+}
+
+.links {
+    margin-top: 40px;
+}
+
+.links a {
+    text-decoration: none;
+    padding: 0px 10px;
+    color: var(--purple);
+    font-weight: bold;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.author {
+    margin-top: 40px;
+}
+
+.author a {
+    text-decoration: none;
+    color: var(--purple2);
+}
+
+.author a:hover {
+    text-decoration: underline;
+    color: var(--purple2);
+    cursor: crosshair;
+}
